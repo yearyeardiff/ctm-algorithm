@@ -1,5 +1,8 @@
 # 动态规划
 
+- [dp问题分类](https://mp.weixin.qq.com/s/kTlXp0URHcYLET9p43wcGQ)
+- [算法列表](https://mp.weixin.qq.com/s/AWsL7G89RtaHyHjRPNJENA)
+- 套路：明确「状态」 -> 定义 dp 数组/函数的含义 -> 明确「选择」-> 明确 base case。
 ## 背景
 
 > [120. 三角形最小路径和](https://leetcode-cn.com/problems/triangle/)
@@ -490,105 +493,50 @@ public int minDistance(String word1, String word2) {
 
 > 另外一种做法：MAXLEN(a,b)-LCS(a,b)
 
-### 零钱和背包
+### 背包问题
 
-#### 零钱兑换
+1. 01背包 : [背包问题 第一讲](https://mp.weixin.qq.com/s?__biz=MzU4NDE3MTEyMA==&mid=2247485638&idx=1&sn=d7468955c5b121664031fd5c1b5a6f10&scene=21#wechat_redirect)
 
-> [322. 零钱兑换](https://leetcode-cn.com/problems/coin-change/)
->
-> 给定不同面额的硬币 coins 和一个总金额 amount。编写一个函数来计算可以凑成总金额所需的最少的硬币个数。如果没有任何一种硬币组合能组成总金额，返回  -1。
+2. 1. 【练习】01背包 : [背包问题 第二讲](https://mp.weixin.qq.com/s?__biz=MzU4NDE3MTEyMA==&mid=2247485658&idx=1&sn=f298abe76d9cc058805b6a18d2523db6&chksm=fd9ca3c5caeb2ad31f6faefd800471b339d21cf54988e123fc507ff07b1447ae31337d826b0e&token=1589043586&lang=zh_CN&scene=21#wechat_redirect)
+   2. 【学习&练习】01背包 : [背包问题 第三讲](https://mp.weixin.qq.com/s?__biz=MzU4NDE3MTEyMA==&mid=2247485727&idx=1&sn=2cfb1a43bdb4f47cf4457c58f809deb8&chksm=fd9ca200caeb2b16e7c70ffe673886ba3577b3c084ec204a532cf4a5e0d46dc1b51b34970ba2&token=562384961&lang=zh_CN&scene=21#wechat_redirect)
 
-思路：和其他 DP 不太一样，i 表示钱或者容量
+3. 完全背包 : [背包问题 第四讲](https://mp.weixin.qq.com/s?__biz=MzU4NDE3MTEyMA==&mid=2247486107&idx=1&sn=e5fa523008fc5588737b7ed801caf4c3&chksm=fd9ca184caeb28926959c0987208a3932ed9c965267ed366b5b82a6fc16d42f1ff40c29db5f1&token=990510480&lang=zh_CN&scene=21#wechat_redirect)
 
-```
-public int coinChange(int[] coins, int amount) {
-    // 状态 dp[i]表示金额为i时，组成的最小硬币个数
-    int[] dp = new int[amount + 1];
-    dp[0] = 0;
-    for (int i = 1; i <= amount; i++) {
-        // 初始化为最大值
-        int minNum = Integer.MAX_VALUE;
-        for (int n : coins) {
-            if (i - n >= 0) {
-                // 如果上个金额也无法组成，则直接标记
-                if (dp[i - n] == -1) {
-                    dp[i] = -1;
-                    continue;
-                } else {
-                    minNum = Math.min(minNum, dp[i - n] + 1);
-                }
-            } else if (i % n == 0) {
-                minNum = i / n;
-            }
-        }
-        dp[i] = (minNum == Integer.MAX_VALUE ? -1 : minNum);
-    }
-    return dp[amount];
-}
-```
+4. 1. 【练习】完全背包 : [背包问题 第五讲](https://mp.weixin.qq.com/s?__biz=MzU4NDE3MTEyMA==&mid=2247486225&idx=1&sn=f63388476ccf29e465536a065cffe8d8&chksm=fd9ca00ecaeb2918aa7155455124d46681a332c914c8cceb9f2746c52ad11e44d27a8a9fcb36&token=1087019265&lang=zh_CN&scene=21#wechat_redirect)
+   2. 【练习】完全背包 : [背包问题 第六讲](https://mp.weixin.qq.com/s?__biz=MzU4NDE3MTEyMA==&mid=2247486435&idx=1&sn=2464b01e9c0fb8d81fcea6dd4ed0ec92&chksm=fd9ca0fccaeb29ea9947456290099143c5bc9bdea0ccfb2408f5fd63f5e0fc13fcd8060d4251&token=646498266&lang=zh_CN&scene=21#wechat_redirect)
+   3. 【练习】完全背包 : [背包问题 第七讲](https://mp.weixin.qq.com/s?__biz=MzU4NDE3MTEyMA==&mid=2247486586&idx=1&sn=da57c4d7d39bcbd2e16c2cc4e21b2361&chksm=fd9ca765caeb2e73c8fab98ada138d429e0fba35e8af83489cbb4c7a5b6e1e68c1ec341f1cd8&token=536156957&lang=zh_CN&scene=21#wechat_redirect)
 
-#### 零钱兑换 II
+5. 多重背包 : [背包问题 第八讲](https://mp.weixin.qq.com/s?__biz=MzU4NDE3MTEyMA==&mid=2247486649&idx=1&sn=ba09ee2d78377c2ddbb9e43622880133&chksm=fd9ca7a6caeb2eb0db61b7604a4aaa8d3ca90d6bc05eb6f50aaab415c4bd7f0047c1ca591018&token=1008907671&lang=zh_CN&scene=21#wechat_redirect)
 
-> [518. 零钱兑换 II](https://leetcode-cn.com/problems/coin-change-2/)
->
-> 给定不同面额的硬币和一个总金额。写出函数来计算可以凑成总金额的硬币组合数。假设每一种面额的硬币有无限个。
+6. 多重背包（优化篇）
 
-先遍历物品再遍历背包 - 组合数
+7. 1. 【上】多重背包（优化篇）: [背包问题 第九讲](https://mp.weixin.qq.com/s?__biz=MzU4NDE3MTEyMA==&mid=2247486796&idx=1&sn=a382b38f8aed295410550bb1767437bd&chksm=fd9ca653caeb2f456262bbf70ffe1eeda8758b426a901a6ac15be184e7017870020e456c6fa2&token=1821593597&lang=zh_CN&scene=21#wechat_redirect)
+   2. 【下】多重背包（优化篇）: [背包问题 第十讲](https://mp.weixin.qq.com/s?__biz=MzU4NDE3MTEyMA==&mid=2247486963&idx=1&sn=51d34f0f841122ed9be2335a402041e8&chksm=fd9ca6eccaeb2ffa1abe413177be376799b427b092bfb73c13e7b77e171b460f4c24b3b7d3bc&token=496118769&lang=zh_CN&scene=21#wechat_redirect)
 
-先遍历背包再遍历物品 - 排列数
+8. 混合背包 : 本篇
 
-```
-public int change(int amount, int[] coins) {
-    // 状态 dp[i]表示金额为i时，组合的方法数
-    int[] dp = new int[amount + 1];
-    dp[0] = 1;
-    // 先遍历物品再遍历背包
-    for (int n : coins) {
-        for (int i = n; i <= amount; i++) {
-            dp[i] += dp[i - n];
-        }
-    }
-    return dp[amount];
-}
-```
+9. 1. 【练习】混合背包
 
-#### 分割等和子集
+10. 分组背包
 
-> [416. 分割等和子集](https://leetcode-cn.com/problems/partition-equal-subset-sum/)
->
-> 给定一个**只包含正整数**的**非空**数组。是否可以将这个数组分割成两个子集，使得两个子集的元素和相等。
+11. 1. 【练习】分组背包
 
-等价于0-1背包问题，只不过目标为数组和的一半。状态转移可以参考题解：[动态规划（转换为 0-1 背包问题）](https://leetcode-cn.com/problems/partition-equal-subset-sum/solution/0-1-bei-bao-wen-ti-xiang-jie-zhen-dui-ben-ti-de-yo/)。
+12. 多维背包
 
-```
-public boolean canPartition(int[] nums) {
-    // 首先计算数组的和
-    int sum = 0;
-    for (int n : nums) {
-        sum += n;
-    }
-    // 如果和不是2的倍数则肯定无法分割
-    if (sum % 2 != 0) {
-        return false;
-    }
-    sum /= 2;
-    // dp[i][j]表示从数组的[0, i]子区间内挑选一些正整数(每个数只能用一次)使得这些数的和恰好等于j
-    boolean[][] dp = new boolean[nums.length][sum + 1];
-    if (nums[0] <= sum) {
-        dp[0][nums[0]] = true;
-    }
-    for (int i = 1; i < nums.length; i++) {
-        for (int j = 0; j <= sum; j++) {
-            // 注意这里的状态转移方程
-            if (nums[i] == j) {
-                dp[i][j] = true;
-            } else if (nums[i] < j) {
-                dp[i][j] = dp[i - 1][j] || dp[i-1][j-nums[i]];
-            } else {
-                dp[i][j] = dp[i-1][j];
-            }
-        }
-    }
-    return dp[nums.length - 1][sum];
-}
-```
+13. 1. 【练习】多维背包
+
+14. 树形背包
+
+15. 1. 【练习篇】树形背包
+
+16. 背包求方案数
+
+17. 1. 【练习】背包求方案数
+
+18. 背包求具体方案
+
+19. 1. 【练习】背包求具体方案
+
+20. 泛化背包
+
+21. 1. 【练习】泛化背包
