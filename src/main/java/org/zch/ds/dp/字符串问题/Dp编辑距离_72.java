@@ -1,4 +1,4 @@
-package org.zch.ds.dp;
+package org.zch.ds.dp.字符串问题;
 
 /**
  * 编辑距离
@@ -16,7 +16,7 @@ package org.zch.ds.dp;
  * 链接：https://leetcode-cn.com/problems/edit-distance
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  */
-public class Dp编辑距离 {
+public class Dp编辑距离_72 {
 
     public int minDistance_0(String word1, String word2) {
         int m = word1.length();

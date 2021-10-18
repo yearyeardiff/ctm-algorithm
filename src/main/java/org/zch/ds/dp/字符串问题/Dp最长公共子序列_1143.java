@@ -1,4 +1,4 @@
-package org.zch.ds.dp;
+package org.zch.ds.dp.字符串问题;
 
 /**
  * 给定两个字符串 text1 和 text2，返回这两个字符串的最长 公共子序列 的长度。如果不存在 公共子序列 ，返回 0 。
@@ -14,7 +14,7 @@ package org.zch.ds.dp;
  * 链接：https://leetcode-cn.com/problems/longest-common-subsequence
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  */
-public class Dp1143_最长公共子序列 {
+public class Dp最长公共子序列_1143 {
 
     public int longestCommonSubsequence(String text1, String text2) {
         int m = text1.length();

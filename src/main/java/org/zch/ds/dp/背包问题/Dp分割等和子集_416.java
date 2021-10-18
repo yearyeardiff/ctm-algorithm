@@ -1,4 +1,4 @@
-package org.zch.ds.dp;
+package org.zch.ds.dp.背包问题;
 
 /**
  * 分割等和子集
@@ -6,7 +6,7 @@ package org.zch.ds.dp;
  * 给你一个 只包含正整数 的 非空 数组 nums 。请你判断是否可以将这个数组分割成两个子集，使得两个子集的元素和相等。
  * https://leetcode-cn.com/problems/partition-equal-subset-sum/
  */
-public class Dp416 {
+public class Dp分割等和子集_416 {
 
     /**
      * https://leetcode-cn.com/problems/partition-equal-subset-sum/solution/gong-shui-san-xie-bei-bao-wen-ti-shang-r-ln14/
@@ -51,7 +51,7 @@ public class Dp416 {
 
 
     /**
-     * 一维数组
+     * 一维数组(0，1背包)
      *
      * @param nums
      * @return

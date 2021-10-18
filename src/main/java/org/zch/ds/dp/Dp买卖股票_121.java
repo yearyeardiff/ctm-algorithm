@@ -17,7 +17,7 @@ import java.util.Arrays;
  * <p>
  * 通用解法：https://mp.weixin.qq.com/s/lQEj_K1lUY83QtIzqTikGA
  */
-public class Dp买卖股票 {
+public class Dp买卖股票_121 {
 
     /**
      * k=1

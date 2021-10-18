@@ -1,4 +1,4 @@
-package org.zch.ds.dp;
+package org.zch.ds.dp.路径问题;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -13,7 +13,7 @@ import java.util.List;
  * 链接：https://leetcode-cn.com/problems/triangle
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  */
-public class Dp120 {
+public class Dp三角形最小路径和_120 {
 
     // ---------------------递归+备忘录-----------------------------------------------------------------------------------------------------------
     public int minimumTotal0(List<List<Integer>> triangle) {

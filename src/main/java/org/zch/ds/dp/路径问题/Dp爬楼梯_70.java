@@ -1,4 +1,4 @@
-package org.zch.ds.dp;
+package org.zch.ds.dp.路径问题;
 
 /**
  * 假设你正在爬楼梯。需要 n 阶你才能到达楼顶。
@@ -9,7 +9,7 @@ package org.zch.ds.dp;
  *
  * https://leetcode-cn.com/problems/climbing-stairs/
  */
-public class Dp70 {
+public class Dp爬楼梯_70 {
     public int climbStairs(int n) {
         int[] dp = new int[n];
         if (n == 1) {

@@ -1,4 +1,4 @@
-package org.zch.ds.dp;
+package org.zch.ds.dp.背包问题;
 
 import java.util.List;
 
@@ -14,7 +14,7 @@ import java.util.List;
  * 链接：https://leetcode-cn.com/problems/word-break
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  */
-public class Dp139 {
+public class Dp单词拆分_139 {
     /**
      * https://leetcode-cn.com/problems/word-break/solution/dai-ma-sui-xiang-lu-139-dan-ci-chai-fen-50a1a/
      *

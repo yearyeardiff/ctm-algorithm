@@ -1,4 +1,6 @@
-package org.zch.ds.dp;
+package org.zch.ds.dp.背包问题;
+
+import java.util.Arrays;
 
 /**
  * 给你一个整数数组 cost 和一个整数 target 。请你返回满足如下规则可以得到的 最大 整数：
@@ -18,9 +20,16 @@ package org.zch.ds.dp;
  * 链接：https://leetcode-cn.com/problems/form-largest-integer-with-digits-that-add-up-to-target
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  */
-public class Dp数位成本和为目标值的最大数字 {
+public class Dp数位成本和为目标值的最大数字_1449 {
 
-    public String largestNumber(int[] cost, int target) {
+    /**
+     * 完全背包
+     *
+     * @param cost
+     * @param target
+     * @return
+     */
+    public static String largestNumber(int[] cost, int target) {
         int[] dp = new int[target + 1];
         dp[0] = 0;
         for (int i = 1; i <= target; i++) {
@@ -38,6 +47,8 @@ public class Dp数位成本和为目标值的最大数字 {
             return "0";
         }
 
+        System.out.println(Arrays.toString(dp));
+
         String ans = "";
         for (int i = 9, j = target; i >= 1; i--) {
             int currentCost = cost[i - 1];
@@ -47,5 +58,9 @@ public class Dp数位成本和为目标值的最大数字 {
             }
         }
         return ans;
+    }
+
+    public static void main(String[] args) {
+        String result = largestNumber(new int[]{4,3,2,5,6,7,2,5,5}, 9);
     }
 }

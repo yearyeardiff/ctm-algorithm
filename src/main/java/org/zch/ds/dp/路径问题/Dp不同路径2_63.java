@@ -1,4 +1,4 @@
-package org.zch.ds.dp;
+package org.zch.ds.dp.路径问题;
 
 /**
  * 一个机器人位于一个 m x n 网格的左上角 （起始点在下图中标记为“Start” ）。
@@ -13,7 +13,7 @@ package org.zch.ds.dp;
  * 链接：https://leetcode-cn.com/problems/unique-paths-ii
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  */
-public class Dp63 {
+public class Dp不同路径2_63 {
 
     public int uniquePathsWithObstacles(int[][] obstacleGrid) {
         int m = obstacleGrid.length;

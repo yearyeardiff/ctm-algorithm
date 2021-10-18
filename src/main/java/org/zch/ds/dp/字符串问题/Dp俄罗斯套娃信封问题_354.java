@@ -1,7 +1,6 @@
-package org.zch.ds.dp;
+package org.zch.ds.dp.字符串问题;
 
 import java.util.Arrays;
-import java.util.Comparator;
 
 /**
  * 给你一个二维整数数组 envelopes ，其中 envelopes[i] = [wi, hi] ，表示第 i 个信封的宽度和高度。
@@ -16,7 +15,7 @@ import java.util.Comparator;
  * 链接：https://leetcode-cn.com/problems/russian-doll-envelopes
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  */
-public class Dp354_俄罗斯套娃信封问题 {
+public class Dp俄罗斯套娃信封问题_354 {
 
     /**
      * 题解：https://mp.weixin.qq.com/s/PSDCjKlTh8MtANdgi-QIug

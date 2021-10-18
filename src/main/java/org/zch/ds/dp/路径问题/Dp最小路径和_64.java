@@ -1,4 +1,4 @@
-package org.zch.ds.dp;
+package org.zch.ds.dp.路径问题;
 
 /**
  * 给定一个包含非负整数的 m x n 网格 grid ，请找出一条从左上角到右下角的路径，使得路径上的数字总和为最小。
@@ -11,7 +11,7 @@ package org.zch.ds.dp;
  * 链接：https://leetcode-cn.com/problems/minimum-path-sum
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  */
-public class Dp最小路径和 {
+public class Dp最小路径和_64 {
 
     public static int minPathSum(int[][] grid) {
         int[][] dp = new int[grid.length][grid[0].length];

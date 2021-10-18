@@ -1,11 +1,11 @@
-package org.zch.ds.dp;
+package org.zch.ds.dp.背包问题;
 
 /**
  * 0，1背包问题
  *
  * link: https://mp.weixin.qq.com/s/xmgK7SrTnFIM3Owpk-emmg
  */
-public class Bag1 {
+public class Bag_01背包 {
 
     /**
      * 有N件物品和一个容量是C的背包。每件物品有且只有一件。

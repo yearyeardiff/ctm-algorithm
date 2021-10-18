@@ -1,4 +1,4 @@
-package org.zch.ds.dp;
+package org.zch.ds.dp.背包问题;
 
 /**
  * 给定正整数 n，找到若干个完全平方数（比如 1, 4, 9, 16, ...）使得它们的和等于 n。你需要让组成和的完全平方数的个数最少。
@@ -12,8 +12,14 @@ package org.zch.ds.dp;
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  *
  */
-public class Dp完全平方数 {
+public class Dp完全平方数_279 {
 
+    /**
+     * 完全背包
+     *
+     * @param n
+     * @return
+     */
     public int numSquares(int n) {
         int max = n + 1;
 

@@ -1,4 +1,4 @@
-package org.zch.ds.dp;
+package org.zch.ds.dp.字符串问题;
 
 import java.util.Arrays;
 
@@ -7,7 +7,7 @@ import java.util.Arrays;
  *
  *  https://leetcode-cn.com/problems/maximum-subarray/
  */
-public class Dp53_最大子序和 {
+public class Dp最大子序和_53 {
     public int maxSubArray(int[] nums) {
         int[] dp = new int[nums.length];
 

@@ -13,7 +13,7 @@ package org.zch.ds.dp;
  * 链接：https://leetcode-cn.com/problems/house-robber-ii
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  */
-public class Dp打家劫舍2 {
+public class Dp打家劫舍2_213 {
     public int rob(int[] nums) {
         int len = nums.length;
         if (len == 1) {

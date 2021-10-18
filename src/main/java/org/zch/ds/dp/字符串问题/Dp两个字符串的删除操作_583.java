@@ -1,4 +1,4 @@
-package org.zch.ds.dp;
+package org.zch.ds.dp.字符串问题;
 
 import java.util.Arrays;
 
@@ -7,7 +7,7 @@ import java.util.Arrays;
  *
  *https://leetcode-cn.com/problems/delete-operation-for-two-strings/
  */
-public class Dp583_两个字符串的删除操作 {
+public class Dp两个字符串的删除操作_583 {
 
     public static int minDistance(String word1, String word2) {
         int m = word1.length();
