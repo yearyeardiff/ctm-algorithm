@@ -9,7 +9,7 @@ import java.util.Map;
  *https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/
  *
  */
-public class Sw3 {
+public class Sw无重复字符的最长子串_3 {
     public int lengthOfLongestSubstring(String s) {
         Map<Character, Integer> winMap = new HashMap<>();
 

@@ -19,7 +19,7 @@ import java.util.Map;
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  *
  */
-public class Sw76 {
+public class Sw最小覆盖子串_76 {
     static Map<Character, Integer> needMap = new HashMap<>();
     static Map<Character, Integer> cntMap = new HashMap<>();
 

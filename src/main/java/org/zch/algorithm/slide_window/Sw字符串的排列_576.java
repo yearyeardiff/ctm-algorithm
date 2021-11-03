@@ -10,7 +10,7 @@ import java.util.Map;
  *
  * https://leetcode-cn.com/problems/permutation-in-string/
  */
-public class Sw576 {
+public class Sw字符串的排列_576 {
 
     public boolean checkInclusion(String s1, String s2) {
         int n = s1.length(), m = s2.length();
