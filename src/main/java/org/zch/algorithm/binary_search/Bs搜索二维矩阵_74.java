@@ -11,7 +11,7 @@ package org.zch.algorithm.binary_search;
  * 链接：https://leetcode-cn.com/problems/search-a-2d-matrix
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  */
-public class Bs74 {
+public class Bs搜索二维矩阵_74 {
     public boolean searchMatrix(int[][] matrix, int target) {
         int m = matrix.length, n = matrix[0].length;
 

@@ -1,4 +1,4 @@
-package org.zch.algorithm.binary_search;
+package org.zch.algorithm.binary_search.旋转数组;
 
 /**
  * 整数数组 nums 按升序排列，数组中的值 互不相同 。
@@ -15,7 +15,7 @@ package org.zch.algorithm.binary_search;
  * 链接：https://leetcode-cn.com/problems/search-in-rotated-sorted-array
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  */
-public class Bs33 {
+public class Bs搜索旋转排序数组_33 {
     /**
      * https://leetcode-cn.com/problems/search-in-rotated-sorted-array/solution/duo-si-lu-wan-quan-gong-lue-bi-xu-miao-dong-by-swe/
      *

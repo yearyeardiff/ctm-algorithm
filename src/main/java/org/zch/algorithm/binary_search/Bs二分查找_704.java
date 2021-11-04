@@ -9,7 +9,7 @@ package org.zch.algorithm.binary_search;
  * 链接：https://leetcode-cn.com/problems/binary-search
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  */
-public class Bs704 {
+public class Bs二分查找_704 {
     public int search(int[] nums, int target) {
 
         int left = 0;
@@ -30,6 +30,13 @@ public class Bs704 {
 
     }
 
+    /**
+     * 另外的题解：https://leetcode-cn.com/problems/binary-search/solution/leetcode-offer-er-fen-cha-zhao-san-da-mo-0mn7/
+     *
+     * @param nums
+     * @param target
+     * @return
+     */
     public int search_left_bound(int[] nums, int target) {
 
         int left = 0;

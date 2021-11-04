@@ -1,4 +1,4 @@
-package org.zch.algorithm.binary_search;
+package org.zch.algorithm.binary_search.旋转数组;
 
 /**
  * 已知一个长度为 n 的数组，预先按照升序排列，经由 1 到 n 次 旋转 后，得到输入数组。例如，原数组 nums = [0,1,2,4,5,6,7] 在变化后可能得到：
@@ -14,7 +14,7 @@ package org.zch.algorithm.binary_search;
  * 链接：https://leetcode-cn.com/problems/find-minimum-in-rotated-sorted-array
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  */
-public class Bs153 {
+public class Bs寻找旋转排序数组中的最小值_153 {
 
     public static int findMin(int[] nums) {
         int left = 0, right = nums.length - 1;
