@@ -3,7 +3,7 @@ package org.zch.algorithm.binary_tree;
 
 import org.junit.Test;
 
-public class BtÆ½ºâ¶ş²æÊ÷avl {
+public class Btå¹³è¡¡äºŒå‰æ ‘avl {
     class Node {
         public int data;
         public int height;
@@ -38,7 +38,7 @@ public class BtÆ½ºâ¶ş²æÊ÷avl {
     }
 
     /**
-     * Æ½ºâ¶ş²æÊ÷
+     * Æ½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
      *
      * @author zch
      */
@@ -53,7 +53,7 @@ public class BtÆ½ºâ¶ş²æÊ÷avl {
         }
 
         /**
-         * ¶ş²æËÑË÷Ê÷µÄ²åÈë£¨¶Ô±ÈavlÊ÷£©
+         * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä²ï¿½ï¿½ë£¨ï¿½Ô±ï¿½avlï¿½ï¿½ï¿½ï¿½
          *
          * @param node
          * @param data
@@ -141,7 +141,7 @@ public class BtÆ½ºâ¶ş²æÊ÷avl {
         }
 
         /**
-         * ÇóÊ÷µÄ¸ß¶È
+         * ï¿½ï¿½ï¿½ï¿½ï¿½Ä¸ß¶ï¿½
          *
          * @param bt
          * @return
