@@ -6,7 +6,7 @@ import java.util.Map;
 /**
  * https://leetcode-cn.com/problems/copy-list-with-random-pointer/
  */
-public class ListNode138 {
+public class ListNode复制带随机指针的链表_138 {
     public static class Node {
         int val;
         Node next;
