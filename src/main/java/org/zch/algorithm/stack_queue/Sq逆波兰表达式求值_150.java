@@ -19,7 +19,7 @@ import java.util.LinkedList;
  * 链接：https://leetcode-cn.com/problems/evaluate-reverse-polish-notation
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  */
-public class Sq150 {
+public class Sq逆波兰表达式求值_150 {
 
 
     public int evalRPN(String[] tokens) {

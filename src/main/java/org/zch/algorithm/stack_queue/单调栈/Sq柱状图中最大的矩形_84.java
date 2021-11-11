@@ -1,4 +1,4 @@
-package org.zch.algorithm.stack_queue;
+package org.zch.algorithm.stack_queue.单调栈;
 
 import java.util.Deque;
 import java.util.LinkedList;
@@ -10,7 +10,7 @@ import java.util.LinkedList;
  *
  * https://leetcode-cn.com/problems/largest-rectangle-in-histogram/
  */
-public class Sq84 {
+public class Sq柱状图中最大的矩形_84 {
 
     /**
      * 暴力解法

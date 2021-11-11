@@ -17,7 +17,7 @@ import java.util.Map;
  * 链接：https://leetcode-cn.com/problems/valid-parentheses
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  */
-public class Sq20 {
+public class Sq有效的括号_20 {
 
     private static final Map<Character,Character> map = new HashMap<Character,Character>(){{
         put('{','}'); put('[',']'); put('(',')'); put('?', '?');

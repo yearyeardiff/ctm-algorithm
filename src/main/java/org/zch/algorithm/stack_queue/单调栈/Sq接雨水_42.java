@@ -1,4 +1,4 @@
-package org.zch.algorithm.stack_queue;
+package org.zch.algorithm.stack_queue.单调栈;
 
 import java.util.Deque;
 import java.util.LinkedList;
@@ -8,7 +8,7 @@ import java.util.LinkedList;
  * <p>
  * https://leetcode-cn.com/problems/trapping-rain-water/
  */
-public class Sq42 {
+public class Sq接雨水_42 {
 
     /**
      * 动态规划
@@ -48,7 +48,6 @@ public class Sq42 {
         Deque<Integer> stack = new LinkedList<>();
 
         int sum = 0;
-        stack.push(0);
         for (int i = 1; i < height.length; i++) {
             while (!stack.isEmpty() && height[stack.peek()] < height[i]) {
                 int curIndex = stack.pop();
