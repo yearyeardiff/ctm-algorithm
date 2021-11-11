@@ -1,11 +1,11 @@
-package org.zch.algorithm.linked_list;
+package org.zch.algorithm.linked_list.反转链表;
 
 /**
  * https://leetcode-cn.com/problems/reverse-linked-list-ii/
  *
  * @author zhangchenghao
  */
-public class ListNode92 {
+public class ListNode反转链表2_92 {
 
     public static class ListNode {
         int val;

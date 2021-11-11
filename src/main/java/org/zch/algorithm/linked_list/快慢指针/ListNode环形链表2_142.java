@@ -1,4 +1,4 @@
-package org.zch.algorithm.linked_list;
+package org.zch.algorithm.linked_list.快慢指针;
 
 /**
  * 给定一个链表，返回链表开始入环的第一个节点。 如果链表无环，则返回 null。
@@ -13,7 +13,7 @@ package org.zch.algorithm.linked_list;
  * 链接：https://leetcode-cn.com/problems/linked-list-cycle-ii
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  */
-public class ListNode142 {
+public class ListNode环形链表2_142 {
 
     public static class ListNode {
         int val;
@@ -31,7 +31,13 @@ public class ListNode142 {
             this.next = next;
         }
     }
-    
+
+    /**
+     * https://leetcode-cn.com/problems/linked-list-cycle-ii/solution/linked-list-cycle-ii-kuai-man-zhi-zhen-shuang-zhi-/
+     *
+     * @param head
+     * @return
+     */
     public ListNode detectCycle(ListNode head) {
         ListNode fast = head;
         ListNode slow = head;

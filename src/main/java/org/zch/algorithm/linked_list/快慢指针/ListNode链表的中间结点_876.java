@@ -1,4 +1,4 @@
-package org.zch.algorithm.linked_list;
+package org.zch.algorithm.linked_list.快慢指针;
 
 /**
  * https://leetcode-cn.com/problems/middle-of-the-linked-list/
@@ -8,7 +8,7 @@ package org.zch.algorithm.linked_list;
  *
  * @author zhangchenghao
  */
-public class ListNode876 {
+public class ListNode链表的中间结点_876 {
 
     public static class ListNode {
         int val;
@@ -29,13 +29,13 @@ public class ListNode876 {
 
     public ListNode middleNode(ListNode head) {
         ListNode fast = head;
-        ListNode low = head;
+        ListNode slow = head;
 
         while (fast != null && fast.next != null) {
-            low = low.next;
+            slow = slow.next;
             fast = fast.next.next;
         }
 
-        return low;
+        return slow;
     }
 }

@@ -7,7 +7,13 @@ package org.zch.algorithm.linked_list;
  *
  * https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list/
  */
-public class ListNode83 {
+public class ListNode删除排序链表中的重复元素_83 {
+    /**
+     * 其他写法：https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list/solution/hua-jie-suan-fa-83-shan-chu-pai-xu-lian-biao-zhong/
+     *
+     * @param head
+     * @return
+     */
     public ListNode deleteDuplicates(ListNode head) {
         ListNode p = head;
         while (p != null) {

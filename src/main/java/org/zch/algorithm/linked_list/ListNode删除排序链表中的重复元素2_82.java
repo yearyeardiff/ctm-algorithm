@@ -5,7 +5,7 @@ package org.zch.algorithm.linked_list;
  *
  * @author zhangchenghao
  */
-public class ListNode82 {
+public class ListNode删除排序链表中的重复元素2_82 {
     public static class ListNode {
         int val;
         ListNode next;

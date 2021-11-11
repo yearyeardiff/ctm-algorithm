@@ -1,11 +1,11 @@
-package org.zch.algorithm.linked_list;
+package org.zch.algorithm.linked_list.合并列表;
 
 /**
  * https://leetcode-cn.com/problems/merge-two-sorted-lists/
  * 
  * @author zhangchenghao
  */
-public class ListNode21 {
+public class ListNode合并两个有序链表_21 {
     public class ListNode {
         int val;
         ListNode next;

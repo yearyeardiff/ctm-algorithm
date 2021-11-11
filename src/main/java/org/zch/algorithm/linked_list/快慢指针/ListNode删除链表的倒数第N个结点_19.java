@@ -1,4 +1,4 @@
-package org.zch.algorithm.linked_list;
+package org.zch.algorithm.linked_list.快慢指针;
 
 /**
  * 给你一个链表，删除链表的倒数第 n 个结点，并且返回链表的头结点。
@@ -7,7 +7,7 @@ package org.zch.algorithm.linked_list;
  *
  * https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list/
  */
-public class ListNode19 {
+public class ListNode删除链表的倒数第N个结点_19 {
     public class ListNode {
         int val;
         ListNode next;

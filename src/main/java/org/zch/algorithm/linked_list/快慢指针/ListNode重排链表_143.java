@@ -1,4 +1,4 @@
-package org.zch.algorithm.linked_list;
+package org.zch.algorithm.linked_list.快慢指针;
 
 /**
  * https://leetcode-cn.com/problems/reorder-list/
@@ -13,7 +13,7 @@ package org.zch.algorithm.linked_list;
  *
  * 不能只是单纯的改变节点内部的值，而是需要实际的进行节点交换。
  */
-public class ListNode143 {
+public class ListNode重排链表_143 {
 
     public static class ListNode {
         int val;
@@ -38,18 +38,18 @@ public class ListNode143 {
         }
 
         ListNode fast = head;
-        ListNode low = head;
+        ListNode slow = head;
 
         // 中间的节点
         while (fast.next != null && fast.next.next != null) {
-            low = low.next;
+            slow = slow.next;
             fast = fast.next.next;
         }
 
         // 右边的节点反转
         ListNode rightHalfHead = null;
-        ListNode pr = low.next;
-        low.next = null;
+        ListNode pr = slow.next;
+        slow.next = null;
         while (pr != null) {
             ListNode next = pr.next;
             pr.next = rightHalfHead;

@@ -1,9 +1,9 @@
-package org.zch.algorithm.linked_list;
+package org.zch.algorithm.linked_list.快慢指针;
 
 /**
  * https://leetcode-cn.com/problems/palindrome-linked-list/
  */
-public class ListNode234 {
+public class ListNode回文链表_234 {
     public static class ListNode {
         int val;
         ListNode next;

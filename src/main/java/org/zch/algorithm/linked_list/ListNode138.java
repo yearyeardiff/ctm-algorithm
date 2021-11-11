@@ -25,6 +25,12 @@ public class ListNode138 {
         }
     }
 
+    /**
+     * https://leetcode-cn.com/problems/copy-list-with-random-pointer/solution/liang-chong-shi-xian-tu-jie-138-fu-zhi-dai-sui-ji-/
+     *
+     * @param head
+     * @return
+     */
     public static Node copyRandomList(Node head) {
         Map<Node, Node> map = new HashMap<>();
         Node p = head;

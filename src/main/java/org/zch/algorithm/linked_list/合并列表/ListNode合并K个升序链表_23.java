@@ -1,11 +1,11 @@
-package org.zch.algorithm.linked_list;
+package org.zch.algorithm.linked_list.合并列表;
 
 /**
  * https://leetcode-cn.com/problems/merge-k-sorted-lists/
  *
  * @author zhangchenghao
  */
-public class ListNode23 {
+public class ListNode合并K个升序链表_23 {
 
     public class ListNode {
         int val;
