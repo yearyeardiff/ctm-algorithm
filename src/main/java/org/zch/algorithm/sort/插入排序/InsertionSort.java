@@ -3,7 +3,7 @@
  * <p>
  * Copyright 2016 Asiainfo Technologies(China),Inc. All rights reserved.
  */
-package org.zch.algorithm.sort.²åÈëÅÅĞò;
+package org.zch.algorithm.sort.æ’å…¥æ’åº;
 
 /**
  * $Id: InsertionSelect.java,v 1.0 2018/2/2 10:40 ZCH Exp $

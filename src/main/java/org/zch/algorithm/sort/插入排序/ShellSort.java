@@ -3,7 +3,7 @@
  * <p>
  * Copyright 2016 Asiainfo Technologies(China),Inc. All rights reserved.
  */
-package org.zch.algorithm.sort.²åÈëÅÅĞò;
+package org.zch.algorithm.sort.æ’å…¥æ’åº;
 
 /**
  * $Id: ShellSort.java,v 1.0 2018/2/2 13:42 ZCH Exp $
@@ -18,7 +18,7 @@ public class ShellSort {
     }
 
     /**
-     * ¼ä¸ôÎªincreasementµÄ²åÈëÅÅĞò
+     * é—´éš”ä¸ºincreasementçš„æ’å…¥æ’åº
      *
      * @param arr
      * @param increment

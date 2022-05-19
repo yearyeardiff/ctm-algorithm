@@ -3,11 +3,11 @@
  * <p>
  * Copyright 2016 Asiainfo Technologies(China),Inc. All rights reserved.
  */
-package org.zch.algorithm.sort.Ñ¡ÔñÅÅĞò;
+package org.zch.algorithm.sort.é€‰æ‹©æ’åº;
 
 public class HeapSort {
 
-    public int[] data = new int[9999];//´Ó0¿ªÊ¼´æ´¢ child= parent*2 + 1
+    public int[] data = new int[9999];//ä»0å¼€å§‹å­˜å‚¨ child= parent*2 + 1
     public int size;
 
     public HeapSort(int[] data) {
@@ -18,8 +18,8 @@ public class HeapSort {
     }
 
     /**
-     * µ÷Õû³É×î´ó¶Ñ
-     * ´Óindex¿ªÊ¼µ½length-1½áÊø
+     * è°ƒæ•´æˆæœ€å¤§å †
+     * ä»indexå¼€å§‹åˆ°length-1ç»“æŸ
      *
      * @param index
      */

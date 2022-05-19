@@ -1,7 +1,5 @@
 package org.zch.algorithm.binary_tree.构建二叉树;
 
-import javax.swing.tree.TreeNode;
-
 /**
  * 根据一棵树的中序遍历与后序遍历构造二叉树。
  *

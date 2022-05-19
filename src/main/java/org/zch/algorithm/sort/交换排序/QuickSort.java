@@ -3,7 +3,7 @@
  * <p>
  * Copyright 2016 Asiainfo Technologies(China),Inc. All rights reserved.
  */
-package org.zch.algorithm.sort.Ωªªª≈≈–Ú;
+package org.zch.algorithm.sort.‰∫§Êç¢ÊéíÂ∫è;
 
 /**
  * $Id: QuickSort.java,v 1.0 2018/2/2 14:04 ZCH Exp $

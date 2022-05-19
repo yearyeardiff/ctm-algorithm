@@ -1,5 +1,7 @@
 package org.zch.algorithm.backtrack.分隔问题;
 
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -53,5 +55,10 @@ public class Backtrack分割回文串_131 {
             return false;
         }
         return true;
+    }
+
+    public static void main(String[] args) {
+        LocalDate tmp = LocalDate.parse("2022-02-01", DateTimeFormatter.ofPattern("yyyy-MM-dd"));
+        System.out.println(tmp);
     }
 }

@@ -3,7 +3,7 @@
  * <p>
  * Copyright 2016 Asiainfo Technologies(China),Inc. All rights reserved.
  */
-package org.zch.algorithm.sort.交换排序;
+package org.zch.algorithm.sort.浜ゆ崲鎺掑簭;
 
 /**
  * $Id: BubbleSort.java,v 1.0 2018/2/1 17:46 ZCH Exp $
@@ -12,7 +12,7 @@ package org.zch.algorithm.sort.交换排序;
  */
 public class BubbleSort {
     /**
-     * 从小到大
+     * 浠庡皬鍒板ぇ
      *
      * @param numbers
      */
@@ -29,7 +29,7 @@ public class BubbleSort {
     }
 
     /**
-     * 从小到大
+     * 浠庡皬鍒板ぇ
      *
      * @param numbers
      */
@@ -44,7 +44,7 @@ public class BubbleSort {
                     numbers[j + 1] = temp;
                 }
             }
-            if (flag == 0) {//没有交换：已经有序了
+            if (flag == 0) {//娌℃湁浜ゆ崲锛氬凡缁忔湁搴忎簡
                 break;
             }
         }

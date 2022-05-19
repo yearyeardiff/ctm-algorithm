@@ -14,7 +14,7 @@ package org.zch.algorithm.sort;
 import org.junit.Test;
 
 /**
- * ¹é²¢ÅÅĞò
+ * å½’å¹¶æ’åº
  */
 public class MergeSort {
 
@@ -24,7 +24,7 @@ public class MergeSort {
     }
 
     /**
-     * µİ¹é¹é²¢
+     * é€’å½’å½’å¹¶
      * @param arr
      * @param tempArr
      * @param left

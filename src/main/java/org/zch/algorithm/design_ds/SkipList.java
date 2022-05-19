@@ -2,6 +2,7 @@ package org.zch.algorithm.design_ds;
 
 /**
  * https://juejin.cn/post/6844903847521976327
+ * https://leetcode.cn/problems/design-skiplist/
  */
 //跳跃表
 public class SkipList {

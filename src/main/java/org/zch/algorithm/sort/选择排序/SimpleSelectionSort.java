@@ -3,7 +3,7 @@
  * <p>
  * Copyright 2016 Asiainfo Technologies(China),Inc. All rights reserved.
  */
-package org.zch.algorithm.sort.Ñ¡ÔñÅÅĞò;
+package org.zch.algorithm.sort.é€‰æ‹©æ’åº;
 
 /**
  * $Id: SimpleSelectionSort.java,v 1.0 2018/2/1 20:00 ZCH Exp $

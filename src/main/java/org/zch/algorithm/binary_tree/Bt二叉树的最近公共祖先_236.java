@@ -1,7 +1,5 @@
 package org.zch.algorithm.binary_tree;
 
-import javax.swing.tree.TreeNode;
-
 /**
  * 给定一个二叉树, 找到该树中两个指定节点的最近公共祖先。
  *

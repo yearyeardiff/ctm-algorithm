@@ -1,6 +1,5 @@
 package org.zch.algorithm.binary_tree;
 
-import javax.swing.tree.TreeNode;
 import java.util.LinkedList;
 
 /**
