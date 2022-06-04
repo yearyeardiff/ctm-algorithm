@@ -9,6 +9,13 @@ import java.util.Arrays;
  */
 public class Dp两个字符串的删除操作_583 {
 
+    /**
+     * https://leetcode.cn/problems/delete-operation-for-two-strings/solution/gong-shui-san-xie-cong-liang-chong-xu-li-wqv7/
+     *
+     * @param word1
+     * @param word2
+     * @return
+     */
     public static int minDistance(String word1, String word2) {
         int m = word1.length();
         int n = word2.length();

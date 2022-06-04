@@ -10,7 +10,7 @@ import java.util.Map;
  *
  */
 public class Sw无重复字符的最长子串_3 {
-    public int lengthOfLongestSubstring(String s) {
+    public static int lengthOfLongestSubstring(String s) {
         Map<Character, Integer> winMap = new HashMap<>();
 
         int left = 0, right = 0, maxLen = 0;
@@ -29,5 +29,9 @@ public class Sw无重复字符的最长子串_3 {
             }
         }
         return maxLen;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(lengthOfLongestSubstring("abcdefghf"));
     }
 }

@@ -3,7 +3,14 @@ package org.zch.algorithm.dp.背包问题;
 /**
  * 0，1背包问题
  *
+ * 泛指一类「给定价值与成本」，同时「限定决策规则」，在这样的条件下，如何实现价值最大化的问题。
+ * 今天我们要讲的是「背包问题」中的 01背包问题。
+ * 「01背包」是指给定物品价值与体积（对应了「给定价值与成本」），
+ * 在规定容量下（对应了「限定决策规则」）如何使得所选物品的总价值最大。
+ *
  * link: https://mp.weixin.qq.com/s/xmgK7SrTnFIM3Owpk-emmg
+ * https://mp.weixin.qq.com/s?__biz=MzUxNjY5NTYxNA==&mid=2247486598&idx=1&sn=dd7d0530dd7a5caef7ce70cc3d6eee3f&scene=21#wechat_redirect
+ * https://mp.weixin.qq.com/s?__biz=MzAxODQxMDM0Mw==&mid=2247485064&idx=1&sn=550705eb67f5e71487c8b218382919d6&scene=21#wechat_redirect
  */
 public class Bag_01背包 {
 

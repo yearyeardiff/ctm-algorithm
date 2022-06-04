@@ -48,7 +48,7 @@ public class Sq接雨水_42 {
         Deque<Integer> stack = new LinkedList<>();
 
         int sum = 0;
-        for (int i = 1; i < height.length; i++) {
+        for (int i = 0; i < height.length; i++) {
             while (!stack.isEmpty() && height[stack.peek()] < height[i]) {
                 int curIndex = stack.pop();
                 if (stack.isEmpty()) {

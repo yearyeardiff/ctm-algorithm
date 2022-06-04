@@ -8,6 +8,7 @@ package org.zch.algorithm.dp.背包问题;
  * 求解将哪些物品装入背包可使这些物品的费用总和不超过背包容量，且价值总和最大。
  *
  * https://mp.weixin.qq.com/s?__biz=MzU4NDE3MTEyMA==&mid=2247486107&idx=1&sn=e5fa523008fc5588737b7ed801caf4c3&chksm=fd9ca184caeb28926959c0987208a3932ed9c965267ed366b5b82a6fc16d42f1ff40c29db5f1&token=990510480&lang=zh_CN#rd
+ * https://mp.weixin.qq.com/s?__biz=MzAxODQxMDM0Mw==&mid=2247485124&idx=1&sn=52068c8000b90a7a972dbd04658d79b7&scene=21#wechat_redirect
  */
 public class Bag_完全背包 {
 

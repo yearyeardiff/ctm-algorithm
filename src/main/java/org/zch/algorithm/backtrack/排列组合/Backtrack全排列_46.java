@@ -9,7 +9,7 @@ import java.util.List;
  * https://leetcode-cn.com/problems/permutations/
  *
  */
-public class Backtrack排列_46 {
+public class Backtrack全排列_46 {
     public List<List<Integer>> permute(int[] nums) {
         boolean[] visited = new boolean[nums.length];
         List<List<Integer>> pathList = new ArrayList<>();
