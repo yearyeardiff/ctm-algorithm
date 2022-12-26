@@ -16,6 +16,15 @@ package org.zch.algorithm.dp.字符串问题;
  */
 public class Dp最长公共子序列_1143 {
 
+    /**
+     * https://leetcode.cn/problems/longest-common-subsequence/solution/by-lfool-ix2f/
+     *
+     * 如何打印出最长公共子序列
+     *
+     * @param text1
+     * @param text2
+     * @return
+     */
     public int longestCommonSubsequence(String text1, String text2) {
         int m = text1.length();
         int n = text2.length();

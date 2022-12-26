@@ -12,7 +12,7 @@ import java.util.Map;
  */
 public class Sq下一个最大元素1_496 {
     /**
-     *
+     * 单调递减栈
      * https://leetcode-cn.com/problems/next-greater-element-i/solution/zhan-xia-yi-ge-geng-da-yuan-su-i-by-demi-cumj/
      * @param nums1
      * @param nums2

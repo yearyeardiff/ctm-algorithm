@@ -13,6 +13,10 @@ package org.zch.algorithm.sort;
 
 import org.junit.Test;
 
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+
 /**
  * 归并排序
  */
@@ -72,5 +76,9 @@ public class MergeSort {
         int[] arr = {34, 12, 66, 2, 4, 77, 8, 1};
         MergeSort mergeSort = new MergeSort();
         mergeSort.merge_sort(arr);
+    }
+
+    public static void main(String[] args) {
+        System.out.println(LocalDate.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd 23:59:59")));
     }
 }

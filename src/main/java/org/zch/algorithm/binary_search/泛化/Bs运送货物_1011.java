@@ -1,4 +1,4 @@
-package org.zch.algorithm.binary_search;
+package org.zch.algorithm.binary_search.泛化;
 
 /**
  * 传送带上的包裹必须在 D 天内从一个港口运送到另一个港口。

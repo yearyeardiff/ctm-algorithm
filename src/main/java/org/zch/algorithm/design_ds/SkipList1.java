@@ -3,9 +3,10 @@ package org.zch.algorithm.design_ds;
 /**
  * https://juejin.cn/post/6844903847521976327
  * https://leetcode.cn/problems/design-skiplist/
+ * https://leetcode.cn/problems/design-skiplist/solution/javashou-xie-shi-xian-tiao-biao-by-feng-omdm0/
  */
 //跳跃表
-public class SkipList {
+public class SkipList1 {
     //允许的最大层数
     int maxLevel = 16;
     //头节点，充当辅助。
@@ -107,7 +108,7 @@ public class SkipList {
 
     //测试数据
     public static void main(String[] args) {
-        SkipList list = new SkipList();
+        SkipList1 list = new SkipList1();
         for (int i = 0; i < 6; i++) {
             list.insert(i);
         }
@@ -122,12 +123,10 @@ public class SkipList {
 //节点
 class Node{
     int value = -1;
-    int level;//跨越几层
     Node[] next;//指向下一个节点
 
     public Node(int value, int level) {
         this.value = value;
-        this.level = level;
         this.next = new Node[level];
     }
 }

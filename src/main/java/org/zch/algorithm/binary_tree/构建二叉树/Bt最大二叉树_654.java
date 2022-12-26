@@ -1,7 +1,5 @@
 package org.zch.algorithm.binary_tree.构建二叉树;
 
-import javax.swing.tree.TreeNode;
-
 /**
  * 给定一个不含重复元素的整数数组 nums 。一个以此数组直接递归构建的 最大二叉树 定义如下：
  *

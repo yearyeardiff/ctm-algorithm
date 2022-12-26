@@ -18,6 +18,13 @@ package org.zch.algorithm.dp.字符串问题;
  */
 public class Dp编辑距离_72 {
 
+    /**
+     * https://leetcode.cn/problems/edit-distance/solution/edit-distance-by-ikaruga/
+     *
+     * @param word1
+     * @param word2
+     * @return
+     */
     public int minDistance_0(String word1, String word2) {
         int m = word1.length();
         int n = word2.length();

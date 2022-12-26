@@ -27,6 +27,13 @@ public class ListNode链表的中间结点_876 {
         }
     }
 
+    /**
+     * fast 走的慢一点（fast != null && fast.next != null），如果有两个中间结点，则返回第二个中间结点。
+     * fast 走的快一点（fast.next != null && fast.next.next != null），如果有两个中间结点，则返回第一个中间结点。
+     *
+     * @param head
+     * @return
+     */
     public ListNode middleNode(ListNode head) {
         ListNode fast = head;
         ListNode slow = head;

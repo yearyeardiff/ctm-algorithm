@@ -39,6 +39,13 @@ public class Sq滑动窗口最大值_239 {
         }
     }
 
+    /**
+     * https://leetcode.cn/problems/sliding-window-maximum/solution/dan-diao-dui-lie-by-labuladong/
+     *
+     * @param nums
+     * @param k
+     * @return
+     */
     /* 解题函数的实现 */
     int[] maxSlidingWindow(int[] nums, int k) {
         MonotonicQueue window = new MonotonicQueue();
