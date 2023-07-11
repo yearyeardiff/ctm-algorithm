@@ -1,9 +1,6 @@
 package org.zch.algorithm.backtrack.子集;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 /**
  * 给你一个整数数组 nums ，其中可能包含重复元素，请你返回该数组所有可能的子集（幂集）。
@@ -22,6 +19,7 @@ public class Backtrack子集2_90 {
     public static List<List<Integer>> subsetsWithDup(int[] nums) {
         List<List<Integer>> result = new ArrayList<>();
         List<Integer> subset = new ArrayList<>();
+        Arrays.sort(nums);
         backtrack(nums, 0, subset, result);
         return result;
     }

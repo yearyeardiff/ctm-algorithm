@@ -1,22 +1,39 @@
 package org.zch.algorithm.graph.二分图;
 
-import java.util.stream.Stream;
-
 /**
  * https://mp.weixin.qq.com/s/5tMzyADbfIJAAvRfSy41Ng
  */
 public class 判断二分图_785 {
-    public static int minElements(int[] nums, int limit, int goal) {
-        int sum = 0;
-        for (int n : nums) {
-            sum += n;
+    boolean ok = true;
+    boolean[] visited;
+    boolean[] colored;
+    public boolean isBipartite(int[][] graph) {
+        int n = graph.length;
+        visited = new boolean[n];
+        colored = new boolean[n];
+
+        for (int i = 0; i < graph.length; i++) {
+            if (!visited[i]) {
+                traverse(graph, i);
+            }
         }
-        int diff = Math.abs(goal - sum);
-        return diff % limit == 0 ? diff / limit : diff / limit + 1;
+        return ok;
     }
 
-    public static void main(String[] args) {
-        minElements(new int[]{1, -1, 1}, 3, -4);
+    private void traverse(int[][] graph, int v) {
+        if (!ok) return;
+
+        for (int w : graph[v]) {
+            if (!visited[w]) {
+                colored[w] = !colored[v];
+                visited[w] = true;
+                traverse(graph, w);
+            } else {
+                if (colored[w] == colored[v]) {
+                    ok = false;
+                }
+            }
+        }
     }
 
 }

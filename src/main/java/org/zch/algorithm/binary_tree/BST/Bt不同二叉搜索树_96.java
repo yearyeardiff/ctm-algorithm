@@ -41,4 +41,26 @@ public class Bt不同二叉搜索树_96 {
         return res;
     }
 
+
+    /**
+     * 动态规划
+     *
+     * @param n
+     * @return
+     */
+    public int numTrees2(int n) {
+        int[] dp = new int[n + 1];
+        dp[0] = 1;
+        for (int i = 1; i <= n; i++) {
+            dp[i] = 0;
+        }
+
+        for (int i = 1; i <= n; i++) {
+            for (int j = 0; j < i; j++) {
+                dp[i] += dp[j] * dp[i - 1 - j];
+            }
+        }
+        return dp[n];
+    }
+
 }

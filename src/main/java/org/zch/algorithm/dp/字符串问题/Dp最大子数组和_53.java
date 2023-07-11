@@ -5,7 +5,7 @@ package org.zch.algorithm.dp.字符串问题;
  *
  *  https://leetcode-cn.com/problems/maximum-subarray/
  */
-public class Dp最大子序和_53 {
+public class Dp最大子数组和_53 {
     public int maxSubArray(int[] nums) {
         int[] dp = new int[nums.length];
 

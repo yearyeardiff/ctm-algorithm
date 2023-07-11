@@ -1,4 +1,4 @@
-package org.zch.algorithm.range;
+package org.zch.algorithm.range.前缀和;
 
 /**
  * 给定一个二维矩阵 matrix，以下类型的多个请求：

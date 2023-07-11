@@ -1,6 +1,8 @@
 package org.zch.algorithm.disjoin_set;
 
+import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Map;
 import java.util.Set;
 
 /**
@@ -42,5 +44,73 @@ public class 最长连续序列_128 {
         }
 
         return maxLen;
+    }
+
+
+    /**
+     * 并查集
+     *
+     * @param nums
+     * @return
+     */
+    public int longestConsecutive2(int[] nums) {
+        Map<Integer, Integer> map = new HashMap<>();
+        for (int i = 0; i < nums.length; i++) {
+            map.put(nums[i], i);
+        }
+
+        Uf uf = new Uf(nums.length);
+        for (int i = 0; i < nums.length; i++) {
+            if (!map.containsKey(nums[i] + 1) || map.get(nums[i]) != i) {
+                continue;
+            }
+            uf.union(i, map.get(nums[i] + 1));
+        }
+
+        return uf.getMaxSize();
+    }
+
+    public class Uf {
+        private int[] parent;
+        private int[] size;
+        public Uf(int n) {
+            parent = new int[n];
+            size = new int[n];
+
+            for (int i = 0; i < n; i++) {
+                parent[i] = i;
+                size[i] = 1;
+            }
+        }
+
+
+        public void union(int p, Integer q) {
+            int rootP = find(p);
+            int rootQ = find(q);
+            if (size[rootP] < size[rootQ]) {
+                parent[rootP] = rootQ;
+                size[rootQ] += size[rootP];
+            } else {
+                parent[rootQ] = rootP;
+                size[rootP] += size[rootQ];
+            }
+
+        }
+
+        private int find(int p) {
+            while (parent[p] != p) {
+                parent[p] = parent[parent[p]];
+                p = parent[p];
+            }
+            return p;
+        }
+
+        public int getMaxSize() {
+            int max = 0;
+            for (int s :  size) {
+                max = Math.max(s, max);
+            }
+            return max;
+        }
     }
 }

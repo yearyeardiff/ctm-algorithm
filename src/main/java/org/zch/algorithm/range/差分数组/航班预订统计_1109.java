@@ -1,4 +1,4 @@
-package org.zch.algorithm.range;
+package org.zch.algorithm.range.差分数组;
 
 /**
  * 这里有 n 个航班，它们分别从 1 到 n 进行编号。
