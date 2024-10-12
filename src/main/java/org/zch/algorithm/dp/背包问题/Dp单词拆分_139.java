@@ -18,6 +18,9 @@ public class Dp单词拆分_139 {
     /**
      * https://leetcode-cn.com/problems/word-break/solution/dai-ma-sui-xiang-lu-139-dan-ci-chai-fen-50a1a/
      *
+     * 完全背包（排列：先遍历背包，再遍历物品）
+     * 字符串问题都是排列问题
+     *
      * @param s
      * @param wordDict
      * @return

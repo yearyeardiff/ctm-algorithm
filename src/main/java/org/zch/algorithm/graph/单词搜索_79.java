@@ -1,4 +1,4 @@
-package org.zch.algorithm.backtrack;
+package org.zch.algorithm.graph;
 
 public class 单词搜索_79 {
 

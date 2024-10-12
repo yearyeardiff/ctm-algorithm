@@ -30,6 +30,7 @@ public class Bt平衡二叉树_110 {
             this.left = left;
             this.right = right;
         }
+
     }
 
     /**

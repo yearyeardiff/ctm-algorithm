@@ -31,6 +31,34 @@ public class Bs二分查找_704 {
     }
 
     /**
+     * 二分查找某个数的左边界
+     *
+     * https://leetcode.cn/problems/binary-search/solutions/1022331/leetcode-offer-er-fen-cha-zhao-san-da-mo-0mn7/
+     *
+     * @param nums
+     * @param target
+     * @return
+     */
+    public int binarySearch(int[] nums, int target) {
+        int left = 0;
+        int right = nums.length - 1;
+        while (left < right) { // 注意
+            int mid = left + ((right - left)) >> 1;
+            // 收缩左边界
+            if (nums[mid] < target) {
+                left = mid + 1;
+            } else { // nums[mid] >= target
+                // 收缩右边界
+                right = mid;
+            }
+        }
+
+        // 打个补丁
+        return nums[left] == target ? left : -1;
+    }
+
+
+    /**
      * 另外的题解：https://leetcode-cn.com/problems/binary-search/solution/leetcode-offer-er-fen-cha-zhao-san-da-mo-0mn7/
      *
      * @param nums
